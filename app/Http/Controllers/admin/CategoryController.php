@@ -37,7 +37,7 @@ class CategoryController extends Controller
         $category->status = $request->input('status') == TRUE ? '1' : '0';
         $category->save();
 
-        return redirect('/dashboard')->with('status', 'add category success');
+        return redirect('/category')->with('status', 'add category success');
     }
 
     //edit-category
